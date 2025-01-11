@@ -1,0 +1,110 @@
+.container {
+  font-family: "Libre Franklin", serif;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  color: #cecbc8;
+  background-color: hsl(24, 14%, 15%);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.space {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.imgContainer {
+  display: flex;
+  height: 50vh;
+}
+
+.imgContainer img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.promise .textContainer {
+  background-color: transparent;
+  color: #cecbc8;
+}
+
+.textContainer {
+  background-color: #cecbc8;
+  color: #28221e;
+  padding: 2em;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.header h1,
+.textContainer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header p,
+.textContainer p {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .container {
+    gap: 5em;
+  }
+
+  .imgContainer {
+    height: 80vh;
+  }
+
+  .space {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .imgContainer {
+    width: 50%;
+  }
+
+  .space .textContainer {
+    justify-content: center;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+  .header h1,
+  .textContainer h2 {
+    font-size: 2.25rem;
+  }
+
+  .header p,
+  .textContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  .header h1,
+  .textContainer h2 {
+    font-size: 2.5rem;
+  }
+
+  .header p,
+  .textContainer p {
+    font-size: 1.75rem;
+  }
+}

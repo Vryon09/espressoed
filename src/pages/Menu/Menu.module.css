@@ -1,0 +1,7 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: hsl(24, 14%, 15%);
+  border-radius: 2rem;
+}

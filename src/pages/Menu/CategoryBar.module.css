@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  margin: 1rem auto;
+  gap: 1.5rem;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+}
+
+.category h3 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #cecbc8;
+  transition: 0.2s;
+}
+
+.category :global(.active h3) {
+  font-weight: 700;
+}
+
+.category a {
+  text-align: center;
+  font-family: "Libre Franklin", serif;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

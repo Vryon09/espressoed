@@ -1,0 +1,83 @@
+.container {
+  margin: 5em auto;
+  background-color: #cecbc8;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Libre Franklin", serif;
+  border-radius: 2rem;
+}
+
+.container h2 {
+  font-size: 3.25rem;
+  color: #28221e;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sectionsContainer > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 50%; */
+  padding: 3em 0;
+}
+
+.sectionHeader {
+  background-color: #28221e;
+  padding: 2em;
+  margin-bottom: 3em;
+  border-radius: 50%;
+}
+
+.infos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  width: 90%;
+}
+
+.infos p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.infos a {
+  /* color: blue; */
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .infos p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sectionsContainer {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .sectionsContainer > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .infos {
+    width: 80%;
+  }
+}

@@ -1,0 +1,65 @@
+.hiddenMenu {
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  background-color: #28221e;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100dvh;
+  transition: 0.3s;
+  color: #cecbc8;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  width: 100%;
+  height: 10%;
+  /* background-color: aqua; */
+}
+
+.close button {
+  padding: 1em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0;
+  width: 100%;
+  gap: 3rem;
+  padding: 1em 0;
+  height: 75%;
+}
+
+.options li {
+  font-size: 1.75rem;
+  font-family: "Libre Franklin", serif;
+  cursor: pointer;
+  color: #cecbc8;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  height: 15%;
+}
+
+.socials button {
+  background-color: transparent;
+  padding: 0.5em;
+  border-radius: 50%;
+  border: 2px solid #cecbc8;
+  cursor: pointer;
+}

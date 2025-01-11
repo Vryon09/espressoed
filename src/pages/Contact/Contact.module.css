@@ -1,0 +1,175 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  color: #cec8c8;
+  font-family: "Libre Franklin", serif;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(24, 14%, 15%);
+  border-radius: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 3em 0;
+}
+
+.contacts {
+  background-color: #cec8c8;
+  padding: 2em;
+  border-radius: 2rem;
+  color: #28221e;
+}
+
+.sectionHeader {
+  margin-bottom: 1em;
+}
+
+.sectionHeader h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.contact p {
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto;
+  width: 100%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+  gap: 1em;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.input label {
+  font-size: 1rem;
+}
+
+.input input {
+  padding: 0.75em;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.input textarea {
+  resize: vertical;
+  min-height: 2rem;
+  padding: 0.5em;
+  font-family: inherit;
+  font-size: 1.25rem;
+
+  border-radius: 12px;
+}
+
+.form button {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1em;
+  border-radius: 2em;
+  width: fit-content;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #cec8c8;
+  color: #cec8c8;
+  transition: 0.1s;
+  align-self: flex-end;
+}
+
+.form button:hover {
+  background-color: hsl(30, 6%, 80%, 0.1);
+}
+
+@media (min-width: 600px) {
+  .contact p {
+    font-size: 1.25rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .infos {
+    /* flex-direction: row; */
+    width: 100%;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .contact p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .infos {
+    flex-direction: row;
+  }
+
+  .contact p {
+    font-size: 1.5rem;
+  }
+
+  .contacts {
+    width: 50%;
+  }
+
+  .form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact p {
+    font-size: 1.75rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .form {
+    width: 60%;
+  }
+}

@@ -1,0 +1,164 @@
+.container {
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+.heroTextContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Libre Franklin", serif;
+  width: 100%;
+  /* color: #3e362e; */
+  color: #cecbc8;
+}
+
+.heroHeader {
+  margin-bottom: 1em;
+}
+
+.smallH1 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bigHeader {
+  display: none;
+}
+
+.heroP {
+  margin-bottom: 4em;
+  width: 90%;
+}
+
+.heroP p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.heroBtn {
+  padding: 1em;
+  font-size: 1rem;
+  font-family: "Libre Franklin", serif;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  border-radius: 2em;
+  background-color: transparent;
+  color: #cecbc8;
+  border: 2px solid #cecbc8;
+}
+
+.heroBtn:hover {
+  background-color: hsl(30, 6%, 80%, 0.1);
+}
+
+.smallImage {
+  width: 300px;
+}
+
+.bigImage {
+  display: none;
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .heroTextContainer {
+    align-items: baseline;
+    justify-content: center;
+    width: 50%;
+    z-index: 2;
+    height: 100%;
+  }
+
+  .heroHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+
+  .bigHeader {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .heroP {
+    margin-bottom: 2em;
+  }
+
+  .heroP p {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+  }
+
+  .heroTextContainer button {
+    font-size: 1.25rem;
+  }
+
+  .bigImage {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 50%;
+    /* background-color: aqua; */
+  }
+
+  .bigImage img {
+    object-fit: contain;
+    width: 80%;
+  }
+
+  .smallImage {
+    display: none;
+  }
+
+  .smallH1 {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 992px) {
+  .bigHeader {
+    font-size: 2.25rem;
+  }
+
+  .heroP p {
+    font-size: 1.5rem;
+  }
+
+  .bigImage {
+    width: 50%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1200px) {
+  .bigHeader {
+    font-size: 2.5rem;
+  }
+
+  .heroP p {
+    text-align: left;
+    font-size: 1.75rem;
+  }
+
+  .bigImage {
+    width: 45%;
+  }
+}

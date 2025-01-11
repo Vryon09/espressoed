@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  font-family: "Libre Franklin", serif;
+  background-color: #cecbc8;
+  color: black;
+  padding: 1em 1.25em;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2em;
+}
+
+.name {
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 500;
+}

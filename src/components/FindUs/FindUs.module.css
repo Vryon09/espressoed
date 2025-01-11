@@ -10,7 +10,7 @@
 }
 
 .container h2 {
-  font-size: 3.25rem;
+  font-size: 2.5rem;
   color: #28221e;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .infos p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -59,13 +59,18 @@
   justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: landscape) {
   .infos p {
     font-size: 1.5rem;
   }
+
+  .container h2 {
+    font-size: 3rem;
+    color: #28221e;
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation: landscape) {
   .sectionsContainer {
     justify-content: space-evenly;
     flex-direction: row;
@@ -76,7 +81,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (orientation: landscape) {
   .infos {
     width: 80%;
   }

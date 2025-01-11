@@ -46,27 +46,27 @@ function FindUs() {
 
           <div className={styles.infos}>
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faPhone} size="2xl" />
+              <FontAwesomeIcon icon={faPhone} size="xl" />
               <p>(123) 456-7890</p>
             </div>
 
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faEnvelope} size="2xl" />
+              <FontAwesomeIcon icon={faEnvelope} size="xl" />
               <p>espressoed@email.com</p>
             </div>
 
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faFacebook} size="2xl" />
+              <FontAwesomeIcon icon={faFacebook} size="xl" />
               <p>@EspressoedOfficial</p>
             </div>
 
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faXTwitter} size="2xl" />
+              <FontAwesomeIcon icon={faXTwitter} size="xl" />
               <p>@EspressoedX</p>
             </div>
 
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faInstagram} size="2xl" />
+              <FontAwesomeIcon icon={faInstagram} size="xl" />
               <p>@EspressoedOfficial</p>
             </div>
 

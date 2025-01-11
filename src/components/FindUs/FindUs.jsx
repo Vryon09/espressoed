@@ -41,33 +41,33 @@ function FindUs() {
 
         <div className={styles.contacts}>
           <div className={styles.sectionHeader}>
-            <FontAwesomeIcon icon={faPhoneFlip} size="3x" color="#cecbc8" />
+            <FontAwesomeIcon icon={faPhone} size="3x" color="#cecbc8" />
           </div>
 
           <div className={styles.infos}>
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faPhone} size="xl" />
               <p>(123) 456-7890</p>
+              <FontAwesomeIcon icon={faPhoneFlip} size="xl" />
             </div>
 
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faEnvelope} size="xl" />
               <p>espressoed@email.com</p>
+              <FontAwesomeIcon icon={faEnvelope} size="xl" />
             </div>
 
             <div className={styles.contact}>
+              <p>@EspressoedOfficial</p>
               <FontAwesomeIcon icon={faFacebook} size="xl" />
-              <p>@EspressoedOfficial</p>
             </div>
 
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faXTwitter} size="xl" />
               <p>@EspressoedX</p>
+              <FontAwesomeIcon icon={faXTwitter} size="xl" />
             </div>
 
             <div className={styles.contact}>
-              <FontAwesomeIcon icon={faInstagram} size="xl" />
               <p>@EspressoedOfficial</p>
+              <FontAwesomeIcon icon={faInstagram} size="xl" />
             </div>
 
             <p>

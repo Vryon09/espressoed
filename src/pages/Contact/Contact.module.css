@@ -47,7 +47,7 @@
 .contact {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .contact p {

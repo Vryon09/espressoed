@@ -7,10 +7,11 @@
 }
 
 .menuText {
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .menuText h1 {
+  font-size: 1.5rem;
   text-align: end;
   margin-bottom: 1em;
   color: #cecbc8;
@@ -56,7 +57,13 @@
 
   .menuText {
     width: 60%;
+    padding: 2em;
   }
+
+  .menuText h1 {
+    font-size: 2rem;
+  }
+
   .menuImage {
     display: flex;
     align-items: center;

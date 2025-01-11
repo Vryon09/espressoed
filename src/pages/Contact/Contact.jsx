@@ -27,11 +27,11 @@ function Contact({ setIsMenuOpen, isMenuOpen }) {
             <div className={styles.info}>
               <div className={styles.contact}>
                 <FontAwesomeIcon size="xl" icon={faPhone} />
-                <p>Direct Line: (123) 456-7890</p>
+                <p>(123) 456-7890</p>
               </div>
               <div className={styles.contact}>
                 <FontAwesomeIcon size="xl" icon={faEnvelope} />
-                <p>Email: espressoed@email.com</p>
+                <p>espressoed@email.com</p>
               </div>
             </div>
           </div>

@@ -8,6 +8,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../../components/Footer/Footer";
+import ContactForm from "./ContactForm";
 
 function Contact({ setIsMenuOpen, isMenuOpen }) {
   return (
@@ -60,29 +61,7 @@ function Contact({ setIsMenuOpen, isMenuOpen }) {
           </div>
         </div>
 
-        <div className={styles.form}>
-          <div className={styles.header}>
-            <h1>Get in Touch</h1>
-          </div>
-          <form>
-            <div className={styles.input}>
-              <label>Full Name</label>
-              <input type="text" />
-            </div>
-
-            <div className={styles.input}>
-              <label>Email</label>
-              <input type="email" />
-            </div>
-
-            <div className={styles.input}>
-              <p>Message</p>
-              <textarea />
-            </div>
-
-            <button>Send Message</button>
-          </form>
-        </div>
+        <ContactForm />
       </div>
 
       <Footer />

@@ -21,14 +21,8 @@ function AboutUs({ setIsMenuOpen, isMenuOpen }) {
 
         <div className={styles.space}>
           <div className={styles.imgContainer}>
-            {/* <img
-              src="./images/cafe-interior.webp"
-              alt="cafe-interior"
-              loading="lazy"
-            /> */}
             <LazyLoadImage
               src="./images/cafe-interior.webp"
-              // effect="black-and-white"
               alt="cafe-interior"
               className={styles.imgContainerImg}
             />

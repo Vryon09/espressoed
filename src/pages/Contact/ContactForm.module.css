@@ -1,0 +1,85 @@
+.header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto;
+  width: 100%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+  gap: 1em;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.input label {
+  font-size: 1rem;
+}
+
+.input input {
+  padding: 0.75em;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.input textarea {
+  resize: vertical;
+  min-height: 2rem;
+  padding: 0.5em;
+  font-family: inherit;
+  font-size: 1.25rem;
+
+  border-radius: 12px;
+}
+
+.form button {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1em;
+  border-radius: 2em;
+  width: fit-content;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #cec8c8;
+  color: #cec8c8;
+  transition: 0.1s;
+  align-self: flex-end;
+}
+
+.form button:hover {
+  background-color: hsl(30, 6%, 80%, 0.1);
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 80%;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+    width: 60%;
+  }
+}

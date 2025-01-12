@@ -6,12 +6,9 @@ function ExploreMenu() {
   return (
     <div className={styles.container}>
       <div className={styles.menuImage}>
-        {/* <img src="./images/explore-menu-1.webp" alt="explore-menu-1" />*/}
         <LazyLoadImage
           src="./images/explore-menu-1.webp"
           alt="explore-menu-1"
-          placeholderSrc="./images/explore-menu-1-low.webp"
-          effect="blur"
         />
       </div>
       <div className={styles.menuText}>

@@ -51,16 +51,26 @@
 
 .header h1,
 .textContainer h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
 .header p,
 .textContainer p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
+  .header h1,
+  .textContainer h2 {
+    font-size: 2rem;
+  }
+
+  .header p,
+  .textContainer p {
+    font-size: 1.25rem;
+  }
+
   .container {
     gap: 5em;
   }

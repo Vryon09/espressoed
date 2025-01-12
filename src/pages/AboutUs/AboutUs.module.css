@@ -41,12 +41,15 @@
 
 .textContainer {
   background-color: #cecbc8;
-  color: #28221e;
-  padding: 2em;
+  color: hsl(24, 14%, 14%);
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.space .textContainer {
+  padding: 2em;
 }
 
 .header h1,

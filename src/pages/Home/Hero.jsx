@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom";
 import styles from "./Hero.module.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Hero() {
   return (
     <div className={styles.container}>
       <div className={styles.heroTextContainer}>
-        <img
+        {/* <img
           src="./images/coffee-hero.webp"
           alt="coffee"
+          className={styles.smallImage}
+        /> */}
+        <LazyLoadImage
+          src="./images/coffee-hero.webp"
+          alt="coffee"
+          effect="blur"
+          placeholderSrc="./images/coffee-hero-low.webp"
           className={styles.smallImage}
         />
         <div className={styles.heroHeader}>
@@ -30,7 +39,14 @@ function Hero() {
         </div>
       </div>
       <div className={styles.bigImage}>
-        <img src="./images/coffee-hero.png" alt="coffee" />
+        {/* <img src="./images/coffee-hero.webp" alt="coffee" loading="lazy" /> */}
+        <LazyLoadImage
+          src="./images/coffee-hero.webp"
+          alt="coffee"
+          effect="blur"
+          className={styles.bigImageImg}
+          placeholderSrc="./images/coffee-hero-low.webp"
+        />
       </div>
     </div>
   );

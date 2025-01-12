@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./AboutUs.module.css";
@@ -20,7 +21,17 @@ function AboutUs({ setIsMenuOpen, isMenuOpen }) {
 
         <div className={styles.space}>
           <div className={styles.imgContainer}>
-            <img src="./images/cafe-interior.jpg" alt="cafe-interior" />
+            {/* <img
+              src="./images/cafe-interior.webp"
+              alt="cafe-interior"
+              loading="lazy"
+            /> */}
+            <LazyLoadImage
+              src="./images/cafe-interior.webp"
+              // effect="black-and-white"
+              alt="cafe-interior"
+              className={styles.imgContainerImg}
+            />
           </div>
           <div className={styles.textContainer}>
             <h2>Our Space</h2>

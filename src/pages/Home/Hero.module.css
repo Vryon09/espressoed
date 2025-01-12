@@ -57,7 +57,7 @@
 }
 
 .smallImage {
-  width: 300px;
+  width: 200px;
 }
 
 .bigImage {
@@ -114,15 +114,15 @@
 
   .bigImage {
     display: flex;
-    align-items: baseline;
     justify-content: center;
     width: 50%;
     /* background-color: aqua; */
   }
 
-  .bigImage img {
-    object-fit: contain;
-    width: 80%;
+  .bigImageImg {
+    width: 300px;
+    height: auto;
+    /* background-color: antiquewhite; */
   }
 
   .smallImage {
@@ -143,8 +143,10 @@
     font-size: 1.5rem;
   }
 
-  .bigImage {
-    width: 50%;
+  .bigImageImg {
+    width: 400px;
+    height: auto;
+    /* background-color: antiquewhite; */
   }
 }
 
@@ -160,5 +162,11 @@
 
   .bigImage {
     width: 45%;
+  }
+
+  .bigImageImg {
+    width: 450px;
+    height: auto;
+    /* background-color: antiquewhite; */
   }
 }

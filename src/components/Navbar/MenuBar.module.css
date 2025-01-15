@@ -22,11 +22,17 @@
   font-family: "Libre Franklin", serif;
   color: #cecbc8;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding: 0.5rem 0;
+  transition: 0.3s;
+}
+
+.menus a:hover {
+  border-bottom-color: #cecbc8;
 }
 
 .menus :global(.active) {
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
+  border-bottom: 1px solid #cecbc8;
 }
 
 @media only screen and (min-width: 992px) {
